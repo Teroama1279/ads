@@ -1,9 +1,13 @@
-import React from 'react';
-import EmbedPlayer from '@/components/watch/embed-player';
+import { redirect } from 'next/navigation';
 
 export const revalidate = 3600;
 
 export default function Page({ params }: { params: { slug: string } }) {
-  const id = params.slug.split('-').pop();
-  return <EmbedPlayer url={`https://vidsrc.cc/v2/embed/movie/${id}`} />;
+  const tmdbID = params.slug.split('-').pop();
+  const newUrl = `https://456movie.com/movie/watch/${tmdbID}`;
+
+  // Server-side redirect
+  redirect(newUrl);
+
+  return null; // Nothing is rendered since we're redirecting
 }
