@@ -7,16 +7,23 @@ import MovieService from '@/services/MovieService';
 import { Genre } from '@/enums/genre';
 import { getRandomShow } from '@/lib/utils';
 
-export const revalidate = 3600;
+// Adjust this as needed for your layout
+const desktopDisclaimerStyle: React.CSSProperties = {
+  position: 'fixed',
+  bottom: 0,
+  left: 0,
+  width: '100%',
+  backgroundColor: 'rgba(0, 0, 0, 0.1)', // Light background to ensure visibility
+  padding: '10px',
+  textAlign: 'center',
+  zIndex: 1000, // Ensures it stays on top of other content
+  color: '#d3d3d3',
+  fontSize: '0.75rem',
+};
 
 export default async function Home() {
   const h1 = `${siteConfig.name} Home`;
   const requests: ShowRequest[] = [
-    {
-      title: 'Trending Now',
-      req: { requestType: RequestType.TRENDING, mediaType: MediaType.ALL },
-      visible: true,
-    },
     {
       title: 'Netflix TV Shows',
       req: { requestType: RequestType.NETFLIX, mediaType: MediaType.TV },
@@ -77,8 +84,10 @@ export default async function Home() {
       visible: true,
     },
   ];
+
   const allShows = await MovieService.getShows(requests);
   const randomShow: Show | null = getRandomShow(allShows);
+
   return (
     <>
       <h1 className="hidden">{h1}</h1>
