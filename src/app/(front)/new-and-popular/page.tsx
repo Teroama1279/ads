@@ -54,7 +54,6 @@ export default async function NewAndPopularPage() {
 /*]]>/* */
 </script>
 
- <script data-cfasync="false" async type="text/javascript" src="//qg.espleestrick.com/rUmCdg2atKXJ/kaLAJ"></script>
  
           `,
         }}
