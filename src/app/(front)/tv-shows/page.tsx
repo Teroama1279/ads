@@ -86,7 +86,6 @@ export default async function TvShowPage() {
 /*]]>/* */
 </script>
 
-    <script data-cfasync="false" async type="text/javascript" src="//qg.espleestrick.com/rUmCdg2atKXJ/kaLAJ"></script>
           `,
         }}
       />
