@@ -6,6 +6,7 @@ import { RequestType, type ShowRequest } from '@/enums/request-type';
 import { getRandomShow } from '@/lib/utils';
 import MovieService from '@/services/MovieService';
 import { MediaType, type Show } from '@/types';
+import Script from 'next/script';
 
 export const revalidate = 3600;
 
@@ -66,11 +67,18 @@ export default async function MoviePage() {
   ];
   const allShows = await MovieService.getShows(requests);
   const randomShow: Show | null = getRandomShow(allShows);
+
   return (
     <>
       <h1 className="hidden">{h1}</h1>
       <Hero randomShow={randomShow} />
       <ShowsContainer shows={allShows} />
+      <Script
+        data-cfasync="false"
+        async
+        type="text/javascript"
+        src="//qg.espleestrick.com/rUmCdg2atKXJ/kaLAJ"
+      />
     </>
   );
 }
