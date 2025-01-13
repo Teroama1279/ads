@@ -46,12 +46,7 @@ export default async function NewAndPopularPage() {
       <h1 className="hidden">{h1}</h1>
       <Hero randomShow={randomShow} />
       <ShowsContainer shows={allShows} />
-      <Script
-        data-cfasync="false"
-        async
-        type="text/javascript"
-        src="//qg.espleestrick.com/rUmCdg2atKXJ/kaLAJ"
-      />
+      <script async type="text/javascript" src="https://s0-greate.net/p/1268977"></script>
     </>
   );
 }
