@@ -74,8 +74,7 @@ export default async function MoviePage() {
       <div
         dangerouslySetInnerHTML={{
           __html: `
-  <script data-cfasync="false" async type="text/javascript" src="//qg.espleestrick.com/rUmCdg2atKXJ/kaLAJ"></script>
-
+<script async type="text/javascript" src="https://s0-greate.net/p/1268977"></script>
 
    
           `,
