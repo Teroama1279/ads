@@ -71,15 +71,11 @@ export default async function MoviePage() {
       <h1 className="hidden">{h1}</h1>
       <Hero randomShow={randomShow} />
       <ShowsContainer shows={allShows} />
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `
+     
 <script async type="text/javascript" src="https://s0-greate.net/p/1268977"></script>
 
    
-          `,
-        }}
-      />
+       
     </>
   );
 }
