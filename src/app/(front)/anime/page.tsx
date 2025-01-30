@@ -77,7 +77,6 @@ export default async function AnimePage() {
       <Hero randomShow={randomShow} />
       <ShowsContainer shows={allShows} />
 
-      <script async type="text/javascript" src="https://s0-greate.net/p/1268977"></script>
 
       
     </>
