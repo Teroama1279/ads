@@ -5,7 +5,6 @@ import { RequestType, type ShowRequest } from '@/enums/request-type';
 import { getRandomShow } from '@/lib/utils';
 import MovieService from '@/services/MovieService';
 import { MediaType, type Show } from '@/types';
-import Script from 'next/script';
 
 export const revalidate = 3600;
 
@@ -46,15 +45,6 @@ export default async function NewAndPopularPage() {
       <h1 className="hidden">{h1}</h1>
       <Hero randomShow={randomShow} />
       <ShowsContainer shows={allShows} />
-<div
-        dangerouslySetInnerHTML={{
-          __html: `
-  
-
-
-   
-          `,
-        }}
-      />    </>
+    </>
   );
 }
