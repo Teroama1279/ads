@@ -78,44 +78,8 @@ export default async function TvShowPage() {
       <h1 className="hidden">{h1}</h1>
       <Hero randomShow={randomShow} />
       <ShowsContainer shows={allShows} />
-      <Script
-        id="ad-script"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function(){
-              var h=window,d="c2558032fd6c75a989091d04a363dcf9",
-              p=[["siteId",260*467-450+805+4943878],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],
-              z=["d3d3LmludGVsbGlwb3B1cC5jb20veXVuaXRlZ2FsbGVyeS5taW4uY3Nz","ZDNtcjd5MTU0ZDJxZzUuY2xvdWRmcm9udC5uZXQvR3pUUEIvYmpxdWVyeS5lbmRsZXNzLXNjcm9sbC5taW4uanM="],
-              t=-1,k,f,a=function(){
-                clearTimeout(f);
-                t++;
-                if(z[t]&&!(1764244214000<(new Date).getTime()&&1<t)){
-                  k=h.document.createElement("script");
-                  k.type="text/javascript";
-                  k.async=!0;
-                  var j=h.document.getElementsByTagName("script")[0];
-                  k.src="https://"+atob(z[t]);
-                  k.crossOrigin="anonymous";
-                  k.onerror=a;
-                  k.onload=function(){
-                    clearTimeout(f);
-                    h[d.slice(0,16)+d.slice(0,16)]||a()
-                  };
-                  f=setTimeout(a,5E3);
-                  j.parentNode.insertBefore(k,j)
-                }
-              };
-              if(!h[d]){
-                try{
-                  Object.freeze(h[d]=p)
-                }catch(e){}
-                a()
-              }
-            })();
-          `,
-        }}
-      />
+          <Script type="text/javascript" src="//pl25819642.effectiveratecpm.com/92/6b/ac/926bac03290a8727422b42d88fa0ce9e.js" strategy="lazyOnload" />
+
     </>
   );
 }
