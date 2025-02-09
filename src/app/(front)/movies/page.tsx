@@ -73,7 +73,6 @@ export default async function MoviePage() {
       <h1 className="hidden">{h1}</h1>
       <Hero randomShow={randomShow} />
       <ShowsContainer shows={allShows} />
-            <Script type="text/javascript" src="//pl25819642.effectiveratecpm.com/92/6b/ac/926bac03290a8727422b42d88fa0ce9e.js" strategy="lazyOnload" />
 
     </>
   );
