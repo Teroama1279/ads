@@ -47,7 +47,7 @@ export default async function NewAndPopularPage() {
       <h1 className="hidden">{h1}</h1>
       <Hero randomShow={randomShow} />
       <ShowsContainer shows={allShows} />
-            <Script type="text/javascript" src="//pl25819890.effectiveratecpm.com/e4/45/7a/e4457ac81aaa9641725f81e567c67c97.js" strategy="lazyOnload" />
+      <Script data-cfasync="false" async src="//dj.impendtewter.com/rd3n3Hgh4cMst0p/qknjB" strategy="lazyOnload" />
       {/*<Script
         id="ad-script"
         strategy="afterInteractive"
